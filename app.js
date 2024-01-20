@@ -30,8 +30,8 @@ async function changeWeatherUI(captitalSearch){
         content.classList.add('hide')
     }
 }
-search.addEventListener('keypress', function(e){
-    if(e.code === 'Enter'){
+search.addEventListener('keyup', function(e){
+    if(e.key === 'Enter'){
         let captitalSearch = search.value.trim()
         changeWeatherUI(captitalSearch)
     }
